@@ -1,0 +1,278 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="название"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/equipment_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="код устройства"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/connection_object"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equipment_number"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="обьект привязки"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/connection_object"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="описание"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="адрес"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginBottom="7dp"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="широта"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/lng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginBottom="7dp"
+            android:gravity="right"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="долгота"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/equipment_smth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lat"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text=" ... устройства"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equipment_smth"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="км"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/smeshenie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/km"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="смещение"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/es_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/smeshenie"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="тип ЭС"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/potenzialov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/es_type"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="... потенциалов"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/potenzialov"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="@string/lorem_ipsum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="5dp"
+            android:text="РЕДАКТИРОВАТЬ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="ОПРОСИТЬ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/monitoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/body"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:lineSpacingExtra="3dp"
+            android:paddingRight="5dp"
+            android:text="МОНИТОРИНГ"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/dddd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/monitoring"
+            android:layout_marginBottom="7dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded"/>
+
+    </RelativeLayout>
+
+</ScrollView>
