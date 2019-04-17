@@ -39,4 +39,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-maps:16.0.0'
 
 
+    compile 'com.github.nkzawa:socket.io-client:0.3.0'
+
+
+
 }
